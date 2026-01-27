@@ -1,0 +1,166 @@
+/* src/components/Sidebar/Sidebar.module.css */
+
+/* === GLASSMORPHISM FORMULA === */
+.glass {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* === SIDEBAR CONTAINER === */
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+/* === PROFILE SECTION === */
+.profile {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profileImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.profile p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+/* === NAVIGATION === */
+.navigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  transform: translateX(5px);
+}
+
+.navBtn.active {
+  background: rgba(102, 126, 234, 0.2);
+  color: white;
+}
+
+.navBtn i {
+  width: 20px;
+  font-size: 1.2rem;
+}
+
+/* === SOCIAL LINKS === */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialLink {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .profileImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+  }
+  
+  .profile h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .profile p {
+    display: none;
+  }
+  
+  .navigation {
+    flex-direction: row;
+    flex: none;
+  }
+  
+  .navBtn {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navBtn span {
+    display: none;
+  }
+  
+  .social {
+    padding-top: 0;
+    border-top: none;
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+    /* Silver Color Palette */
+    --silver-light: #D8D4CB;
+    --silver-base: #C0C0C0;
+    --silver-medium: #A9A9A9;
+    --silver-dark: #949090;
+    --silver-deep: #8B8686;
+    
+    /* Lightened Glassmorphism */
+    --glass-light: rgba(255, 255, 255, 0.4);
+    --glass-medium: rgba(255, 255, 255, 0.35);
+    --glass-dark: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.45);
+    --glass-shadow: rgba(0, 0, 0, 0.08);
+    
+    /* Text Colors */
+    --text-dark: #2d3748;
+    --text-medium: #4a5568;
+    --text-light: #718096;
+    
+    /* Background */
+    --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+    
+    /* Effects */
+    --blur-amount: 20px;
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+}

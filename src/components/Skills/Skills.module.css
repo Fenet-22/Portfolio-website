@@ -1,0 +1,255 @@
+/* src/components/Skills/Skills.module.css */
+
+/* === GLASSMORPHISM === */
+.glass {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* === MAIN SECTION === */
+.skillsSection {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* === HERO HEADER === */
+.heroHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.gradientText {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === STATS OVERVIEW === */
+.statsOverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.statItem i {
+  font-size: 2rem;
+  color: #667eea;
+}
+
+.statItem h3 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+.statItem p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* === SKILLS GRID === */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skillCategory {
+  padding: 2rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.skillCategory:hover {
+  transform: translateY(-5px);
+}
+
+.skillCategory h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* === SKILL LIST === */
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillItem {
+  width: 100%;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skillName {
+  color: white;
+  font-weight: 500;
+}
+
+.skillPercent {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.progressBar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+/* === TECH STACK === */
+.techStack {
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.techStack h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.techIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.techItem:hover {
+  transform: translateY(-5px);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.techItem i {
+  font-size: 2.5rem;
+  color: #667eea;
+}
+
+.techItem span {
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* === LEARNING NOW === */
+.learningNow {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.learningNow h2 {
+  color: white;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learningItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.learningItem {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.learningItem:hover {
+  transform: translateY(-5px);
+}
+
+.learningItem i {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.learningItem h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.learningItem p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .skillsSection {
+    padding: 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .techIcons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .learningItems {
+    grid-template-columns: 1fr;
+  }
+}
