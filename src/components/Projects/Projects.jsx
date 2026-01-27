@@ -2,6 +2,13 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.css';
 
+// 1. IMPORT YOUR IMAGES CORRECTLY
+// These imports tell Vite to include the files in the production build
+import evangadiImg from '../../assets/evangadi.png';
+import appleImg from '../../assets/apple.png';
+import amazonImg from '../../assets/amazon.png';
+import netflixImg from '../../assets/netflix.png';
+
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
@@ -12,7 +19,7 @@ const Projects = () => {
       description: 'A full-stack community Q&A platform with real-time messaging, user authentication, voting system, and interactive discussions.',
       category: 'fullstack',
       tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io', 'JWT'],
-      image: '/src/assets/evangadi.png',
+      image: evangadiImg, // USE THE VARIABLE, NOT A STRING
       demoUrl: 'https://evangadiforum.fenetahmed.com/',
       githubUrl: 'https://github.com/geeksforweb/Evangadi-Forum-G1-2025/tree/Main_Database',
     },
@@ -22,7 +29,7 @@ const Projects = () => {
       description: 'Pixel-perfect responsive clone of Apple\'s homepage with smooth animations and interactive components.',
       category: 'clone',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Responsive'],
-      image: '/src/assets/apple.png',
+      image: appleImg, // USE THE VARIABLE
       demoUrl: 'https://profound-cannoli-9407ac.netlify.app/',
       githubUrl: 'https://github.com/Fenet-22/Apple-Clone',
     },
@@ -32,7 +39,7 @@ const Projects = () => {
       description: 'Full-featured e-commerce platform with product listings, shopping cart, and user authentication.',
       category: 'clone',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Firebase'],
-      image: '/src/assets/amazon.png',
+      image: amazonImg, // USE THE VARIABLE
       demoUrl: 'https://imaginative-sundae-dd7427.netlify.app/',
       githubUrl: 'https://github.com/Fenet-22/Amazon-Frontend2',
     },
@@ -42,7 +49,7 @@ const Projects = () => {
       description: 'Video streaming platform with user profiles, content categorization, and movie recommendations.',
       category: 'clone',
       tags: ['React', 'TMDB API', 'Firebase', 'Responsive'],
-      image: '/src/assets/netflix.png',
+      image: netflixImg, // USE THE VARIABLE
       demoUrl: 'https://netflix-clone-2025-five.vercel.app/',
       githubUrl: 'https://github.com/Fenet-22/Netflix-Clone-2025',
     }

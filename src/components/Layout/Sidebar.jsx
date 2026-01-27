@@ -1,7 +1,7 @@
 // src/components/Sidebar/Sidebar.jsx
 import React from 'react';
 import styles from './Sidebar.module.css';
-
+import profilePic from '../../assets/me.jpg';
 const Sidebar = ({ activeSection, setActiveSection }) => {
   const navItems = [
     { id: 'about', icon: 'fas fa-user', label: 'About' },
@@ -13,7 +13,7 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
   return (
     <aside className={`${styles.sidebar} ${styles.glass}`}>
       <div className={styles.profile}>
-        <img src="/src/assets/me.jpg" alt="Profile" className={styles.profileImg} />
+        <img src={profilePic} alt="Profile" className={styles.profileImg} />
         <h2>Fenet Ahmed</h2>
         <p>Full Stack Developer</p>
       </div>
