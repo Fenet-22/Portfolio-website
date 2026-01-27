@@ -42,13 +42,21 @@ const About = () => {
             to social media applications.
           </p>
           <div className={styles.ctaButtons}>
-            <a href="/src/components/Contact/Contact.jsx" className={styles.primaryBtn}>
-              <i className="fas fa-paper-plane"></i> Get In Touch
-            </a>
-            <a href="/public/resume.pdf" className={styles.secondaryBtn}>
-              <i className="fas fa-download"></i> Download CV
-            </a>
-          </div>
+  {/* Navigates to the contact section on the same page */}
+  <a href="#contact" className={styles.primaryBtn}>
+    <i className="fas fa-paper-plane"></i> Get In Touch
+  </a>
+
+  {/* Opens the resume sitting in your public_html folder */}
+  <a 
+    href="/resume.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className={styles.secondaryBtn}
+  >
+    <i className="fas fa-download"></i> Download CV
+  </a>
+</div>
         </div>
 
         <div className={`${styles.experienceCard} ${styles.glass}`}>
