@@ -1,4 +1,6 @@
 /* src/global.css */
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +10,12 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
   min-height: 100vh;
-  background: 
-    linear-gradient(135deg, 
-      rgba(20, 20, 30, 0.95) 0%, 
-      rgba(30, 30, 40, 0.95) 100%
-    ),
-    url('/background.jpg') center/cover no-repeat fixed;
+  /* Removed the url() reference to fix the Vite build error */
+  background: linear-gradient(135deg, 
+      rgba(20, 20, 30, 1) 0%, 
+      rgba(30, 30, 45, 1) 100%
+    );
+  background-attachment: fixed;
   color: white;
   overflow-x: hidden;
 }
@@ -48,8 +50,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Font Awesome icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
